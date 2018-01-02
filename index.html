@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Twitch.tv JSON API challenge</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://use.fontawesome.com/7ccc75d0f8.js'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div class="container-fluid">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active navBtn" id="All"><a href="#">All</a></li>
+      <li id="On" class="navBtn"><a href="#">Online</a></li>
+      <li id="Off" class="navBtn"><a href="#">Offline</a></li>
+    </ul>
+  </div>
+</nav>
+  
+  <a href="https://www.twitch.tv/esl_sc2"><div id="user0" class="row">
+    <div class="col-xs-2">
+      <img class="img-responsive" src="https://static-cdn.jtvnw.net/jtv_user_pictures/esl_sc2-profile_image-d6db9488cec97125-300x300.jpeg"></img>
+    </div>
+    <div class="col-xs-2">
+      <h2>ESL_SC2</h2>
+    </div>
+    <div class="col-xs-3">
+      <h4 id="description0"></h4>
+    </div>
+    <div  class="col-xs-3">
+      <img id="img0" ></img>
+    </div>
+    <div class="col-xs-2">
+      <h3 id="status0"></h3>
+    </div>
+  </div></a>
+
+  <a href="https://www.twitch.tv/ogamingsc2"><div id="user1" class="row">
+    <div class="col-xs-2">
+      <img class="img-responsive" src="https://static-cdn.jtvnw.net/jtv_user_pictures/ogamingsc2-profile_image-9021dccf9399929e-300x300.jpeg"></img>
+    </div>
+    <div class="col-xs-2">
+      <h2>OgamingSC2</h2>
+    </div>
+    <div class="col-xs-3">
+      <h4 id="description1"></h4>
+    </div>
+    <div class="col-xs-3">
+      <img id="img1" ></img>
+    </div>
+    <div class="col-xs-2">
+      <h3 id="status1"></h3>
+    </div>
+  </div></a>
+
+  <a href="https://www.twitch.tv/cretetion"><div id="user2" class="row">
+    <div class="col-xs-2">
+      <img class="img-responsive" src="https://static-cdn.jtvnw.net/jtv_user_pictures/cretetion-profile_image-12bae34d9765f222-300x300.jpeg"></img>
+    </div>
+    <div class="col-xs-2">
+      <h2>cretetion</h2>
+    </div>
+    <div class="col-xs-3">
+      <h4 id="description2"></h4>
+    </div>
+    <div class="col-xs-3">
+      <img id="img2" ></img>
+    </div>
+    <div class="col-xs-2">
+      <h3 id="status2"></h3>
+    </div>
+  </div></a>
+  
+  <a href="https://www.twitch.tv/freecodecamp"><div id="user3" class="row">
+    <div class="col-xs-2">
+      <img class="img-responsive" src="https://static-cdn.jtvnw.net/jtv_user_pictures/freecodecamp-profile_image-d9514f2df0962329-300x300.png"></img>
+    </div>
+    <div class="col-xs-2">
+      <h2>freecodecamp</h2>
+    </div>
+    <div class="col-xs-3">
+      <h4 id="description3"></h4>
+    </div>
+    <div class="col-xs-3">
+      <img id="img3" ></img>
+    </div>
+    <div class="col-xs-2">
+      <h3 id="status3"></h3>
+    </div>
+  </div></a>
+
+  <a href="https://www.twitch.tv/geoffstorbeck"><div id="user4" class="row">
+    <div class="col-xs-2">
+      <img class="img-responsive" src="https://static-cdn.jtvnw.net/jtv_user_pictures/geoffstorbeck-profile_image-e3eaf467cf31ac06-300x300.jpeg"></img>
+    </div>
+    <div class="col-xs-2">
+      <h2>geoffstorbeck</h2>
+    </div>
+    <div class="col-xs-3">
+      <h4 id="description4"></h4>
+    </div>
+    <div class="col-xs-3">
+      <img id="img4" ></img>
+    </div>
+    <div class="col-xs-2">
+      <h3 id="status4"></h3>
+    </div>
+  </div></a>
+
+  <a href="https://www.twitch.tv/RobotCaleb"><div id="user5" class="row">
+    <div class="col-xs-2">
+      <img class="img-responsive" src="https://static-cdn.jtvnw.net/jtv_user_pictures/robotcaleb-profile_image-9422645f2f0f093c-300x300.png"></img>
+    </div>
+    <div class="col-xs-2">
+      <h2>RobotCaleb</h2>
+    </div>
+    <div class="col-xs-3">
+      <h4 id="description5"></h4>
+    </div>
+    <div class="col-xs-3">
+      <img id="img5" ></img>
+    </div>
+    <div class="col-xs-2">
+      <h3 id="status5"></h3>
+    </div>
+  </div></a>
+
+  <a href="https://www.twitch.tv/noobs2ninjas"><div id="user6" class="row">
+    <div class="col-xs-2">
+      <img class="img-responsive" src="https://static-cdn.jtvnw.net/jtv_user_pictures/noobs2ninjas-profile_image-34707f847a73d934-300x300.png"></img>
+    </div>
+    <div class="col-xs-2">
+      <h2>noobs2ninjas</h2>
+    </div>
+    <div class="col-xs-3">
+      <h4 id="description6"></h4>
+    </div>
+    <div class="col-xs-3">
+      <img id="img6" ></img>
+    </div>
+    <div class="col-xs-2">
+      <h3 id="status6"></h3>
+    </div>
+  </div></a>
+
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
